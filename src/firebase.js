@@ -6,13 +6,13 @@ import 'firebase/compat/storage'
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBNmchmxsex48Ee2YzvflWY9luvCaDskD8",
-    authDomain: "book-app-2f8ca.firebaseapp.com",
-    projectId: "book-app-2f8ca",
-    storageBucket: "book-app-2f8ca.appspot.com",
-    messagingSenderId: "630896994847",
-    appId: "1:630896994847:web:8bdd50601766e570d2032a",
-    measurementId: "G-TB7J5C3FP3"
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+    appId: process.env.REACT_APP_APPID,
+    measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 const firebaseApp=firebase.initializeApp(firebaseConfig)
